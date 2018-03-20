@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZaAuto</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/demo.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+<div id="canvas">
+	<div class="page-header anchor">
+	    <div class="page-header__logo"><img src="img/Лого.png" width="104px" height="41px"><div class="page-header__menu">
+	        <ul>
+	            <a href="#info-blocks"><li></li></a>
+	        </ul> 
+	    </div></div>
+	    
+	</div>
+
+
+<!-- Классы navbar и navbar-default (базовые классы меню) -->
+<div class="page-header   navbar-default">
+        <div class="navbar-header">
+            <!-- Кнопка «Гамбургер» отображается только в мобильном виде (предназначена для открытия основного содержимого Navbar) -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- Бренд или название сайта (отображается в левой части меню) -->
+            <div class="page-header__logo"><img src="img/Лого.png" width="104px" height="41px"></div>
+        </div>
+        <!-- Основная часть меню (может содержать ссылки, формы и другие элементы) -->
+        <div class=" collapse navbar-collapse" id="navbar-main">
+            <!-- Содержимое основной части -->
+            <div class="page-header__menu">
+                <ul>
+                    <a href="#info-blocks"><li>Мы рекламное агентство ЗаАвто, профессионально занимаемся таргетиногом в VK</li></a>
+                    <!-- <a href="#what-does-block"><li>Что вы получите?</li></a>
+                    <a href="#how-works"><li>Как это работает?</li></a>
+                    <a href="#work-community"><li>Как получаем лиды?</li></a>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="info-block">
+    <div class="info-block__text"><img src="img/4Zll3Bq5Ups.png" width="501px" height="192px"><div class="slogan">SMM</div></div>
+</div>
+<div class="info-block__buttons">
+    <a href="#what-does-block__rates"><button type="button" class="btn btn-default first_b">Узнать стоимость</button></a>
+    <button type="button" class="btn btn-default first_b btn-Order" data-toggle="modal" data-target="#myModal">Получить консультацию</button>
+</div>
+<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000" data-pause="none">
+
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="first-slide" style="background-color: #f2f6fc"></div>
+        </div>
+    </div>
+</div>
+
+ <div class="how-works anchor" id="how-works">
+     <h2>Как это работает?</h2>
+         <div class="how-works__img">
+
+           <div class="how-works__container">
+               <div class="foto-container foto-after">
+               <img class="foto" src="img/3.png" alt="альтернативный текст" width="80px" height="80px"></div>
+               <div class="how-works__container-name "><h4><strong>1. Покупка</strong></h4></div>
+               <div class="how-works__container-text"> <p align="center">Клиент знакомится с брендом и совершает покупку</p></div>
+           </div>
+
+
+             <div class="how-works__container foto-after2">
+               <img class="foto" src="img/4.png" alt="альтернативный текст" width="80px" height="80px">
+               <div class="how-works__container-name "><h4><strong>2. Подписка</strong></h4></div>
+               <div class="how-works__container-text"><p align="center">Клиент "следит" за вашим брендом и проявляет активность</p></div>   
+             </div>
+
+
+             <div class="how-works__container foto-after3">
+                 <img class="foto" src="img/2.png" alt="альтернативный текст" width="80px" height="80px">
+                 <div class="how-works__container-name"><h4><strong>3. Новые клиенты</strong></h4></div>
+                 <div class="how-works__container-text"><p align="center">Клиент рассказывает о вашем бренде своим друзьям</p></div>
+             </div>
+
+
+             <div class="how-works__container">
+                <img class="foto" src="img/1.png" alt="альтернативный текст" width="80px" height="80px">
+                <div class="how-works__container-name"><h4><strong>4. Прибыль</strong></h4></div> 
+                <div class="how-works__container-text"><p align="center">Благодаря новым вовлечениям вы получаете больше прибыли</p></div>  
+             </div>
+         </div>
+     <a type="button" class="btn btn-default btn-order"  href="#info-blocks">ПРЕИМУЩЕСТВА</a>
+ </div>
+
+<div class="what-does-block anchor" id="what-does-block">
+
+   <h2 style="color: white">Работайте с нами с выгодой для себя</h2>
+   <h3 style="color: white">Выберите оптимальный тариф</h3>
+  
+     <div class="what-does-block__rates" id="what-does-block__rates">
+       <div class="rate1 rate">
+       	    <h3>Стандарт</h3>
+       	    <h2>35000 р</h2>
+         	<h3><p align="center">Таргетированная коммуникация</p></h3>
+       	    <div class="options">
+       		  <ul>
+       		  	<li>Поиск и сегментирование целефой аудитории</li>
+       		  	<li>Создание от 10 рекламных постов(креативы)</li>
+       		  	<li>Тестирование креативов до достижения оптимальной конверсии</li>
+       		  	<li>Запуск и трансляция постов на целевую аудиторию</li>
+       		  </ul>
+         	</div>
+         	
+         	<h3><p align="center">Прогнозируемая конверсия</p></h3>
+         	<div class="options">
+       		  <ul>
+       		  	<li>от 500 подписчиков</li>
+       		  	<li>от 70 000 просмотров постов</li>
+       		  	<li>от 10 заявок и обращений</li>
+       		  </ul>
+         	</div>
+         	<button type="button" class="btn btn-default btn-order" data-toggle="modal" data-target="#myModal">ОФОРМИТЬ</button>
+       </div>
+       <div class="rate3 rate anchor">
+       	<div><h3>Премиум +</h3></div>
+         	<div><h2>150 000 р</h2></div>
+         	<div><h3><p align="center">Таргетированная коммуникация</p></h3></div>
+       	    <div class="options">
+       		  <ul>
+       		  	<li>Фокус на дополнительную группу / сообщество</li>
+       		  	<li>Выбор дополнительного региона / Мультилокация</li>
+       		  	<li>Поиск и сегментирование целефой аудитории</li>
+       		  	<li>Создание от 20 рекламных постов(креативы)</li>
+       		  	<li>Тестирование креативов до достижения оптимальной конверсии</li>
+       		  	<li>Запуск и трансляция постов на целевую аудиторию</li>
+       		  </ul>
+         	</div>
+
+         	<div><h3><p align="center">Ведение контента</p></h3></div>
+         	<div class="options">
+       		  <ul>
+       		  	<li>Создание контент-плана и определение целей контента</li>
+       		  	<li>Создание постов вовлечения, информирования и продаж(2 в сутки)</li>
+       		  	<li>Публикация постов по расписанию в соответствии с проработанным контент-планом</li>
+       		  	<li>Анализ и корректировка публикаций</li>
+       		  	<li>Модерация сообщества(ответы на вопросы,управление репутацией,получение заявок)</li>
+       		  </ul>
+         	</div>
+
+         	<div><h3><p align="center">Прогнозируемая конверсия</p></h3></div>
+         	<div class="options">
+       		  <ul>
+       		  	<li>от 4000 подписчиков</li>
+       		  	<li>от 300 000 просмотров постов</li>
+       		  	<li>от 100 заявок и обращений</li>
+       		  </ul>
+         	</div>
+         	<button type="button" class="btn btn-default btn-order" data-toggle="modal" data-target="#myModal">ОФОРМИТЬ</button>
+       </div>
+       <div class="rate2 rate anchor">
+       	<h3>Премиум</h3>
+         	<h2>70000 р</h2>
+         	
+       	    <div class="options">
+       	    <h3><p align="center">Таргетированная коммуникация</p></h3>
+       		  <ul>
+       		  	<li>Поиск и сегментирование целефой аудитории</li>
+       		  	<li>Создание от 20 рекламных постов(креативы)</li>
+       		  	<li>Тестирование креативов до достижения оптимальной конверсии</li>
+       		  	<li>Запуск и трансляция постов на целевую аудиторию</li>
+       		  </ul>
+         	</div>
+         	
+         	<div class="options">
+         	<h3><p align="center">Ведение контента</p></h3>
+       		  <ul>
+       		  	<li>Создание контент-плана и определение целей контента</li>
+       		  	<li>Создание постов вовлечения, информирования и продаж(2 в сутки)</li>
+       		  	<li>Публикация постов по расписанию в соответствии с проработанным контент-планом</li>
+       		  	<li>Анализ и корректировка публикаций</li>
+       		  	<li>Модерация сообщества(ответы на вопросы,управление репутацией,получение заявок)</li>
+       		  </ul>
+         	</div>
+         	
+         	<div class="options">
+         	<h3><p align="center">Прогнозируемая конверсия</p></h3>
+       		  <ul>
+       		  	<li>от 2 500 подписчиков</li>
+       		  	<li>от 150 000 просмотров постов</li>
+       		  	<li>от 50 заявок и обращений</li>
+       		  </ul>
+         	</div>
+         	<button type="button" class="btn btn-default btn-order" data-toggle="modal" data-target="#myModal">ОФОРМИТЬ</button>
+       </div>
+
+     </div>
+ </div>
+
+ <div class="info-blocks anchor" id="info-blocks">
+     <div class="info-block__promo">
+         <h2>Почему стоит довериться именно нам?</h2>
+         <h3>Немного о приемуществах</h3>
+     </div>
+     <div>
+     <div class="info-block__how-work-row">
+
+     <div class="info-block__how-works">
+         <div class="info-block__how-work-image foto-after4"><img class="foto" src="img/5.png" alt="альтернативный текст" width="80px" height="80px"></div>
+         <div class="info-block__how-work-name"><h4>Команда профессионалов</h4></div>
+         <div class="info-block__how-work-text">Чтобы процесс организации рекламной кампании шёл более эффективно, мы привлекаем к процессу целый список специалистов</div>
+     </div>
+      <div class="info-block__how-works">
+         <div class="info-block__how-work-image foto-after4"><img class="foto" src="img/6.png" alt="альтернативный текст" width="80px" height="80px"></div>
+         <div class="info-block__how-work-name"><h4>Наша команда имеет большой опыт работы в сфере продвижения</h4></div>
+         <div class="info-block__how-work-text">Наша команда успешно спланировала и реализовала уже более 700 рекламных кампаний для реальных брендов. Благодаря нашей работе бизнес многих наших клиентов обрёл дополнительный доход!</div>
+     </div>
+     </div>
+     <div class="info-block__how-work-row anchor">
+      <div class="info-block__how-works">
+         <div class="info-block__how-work-image foto-after4"><img class="foto" src="img/7.png" alt="альтернативный текст" width="80px" height="80px"></div>
+         <div class="info-block__how-work-name"><h4>Отдать ваши социальные сети в наши руки выйдет дешевле, чем найти штатного работника!</h4></div>
+         <div class="info-block__how-work-text">На данный момент ауторсинг набирает популярность во всех сферах нашей жизни и продвижение социальных сетей - не исключение. Одна из главных причин этому - сравнительная дешевизна по сравнению с наймом в штат нового специалиста.</div>
+     </div>
+      <div class="info-block__how-works">
+         <div class="info-block__how-work-image foto-after4"><img class="foto" src="img/8.png" alt="альтернативный текст" width="80px" height="80px"></div>
+         <div class="info-block__how-work-name"><h4>Мы имеем все ресурсы для того, чтобы создавать мультиформатный контент!</h4></div>
+         <div class="info-block__how-work-text">Профессиональная фотография или видео сделают ваш продукт более привлекательным, а значит это поможет вам увеличить продажи.</div>
+     </div>
+     </div>
+     </div>
+ </div>
+
+ <div class="partners__customers">
+    <div class="customers">
+    	<h3>Наши клиенты</h3>
+    	<div class="customers__items">
+    	    <div class="customers__items-row1"> 
+
+    	           <div class="item">
+    				    	<div class="mama mama1"></div>&nbsp;&nbsp; &nbsp; <div> АГ "Автомама" (Москва)</div>
+    			   </div>
+
+    				<div class="item">
+    				    	<div class="mama favorit1"></div>&nbsp;&nbsp; &nbsp; <div>АГ "Фаворит моторс" (Москва)</div>
+    			   	</div>
+
+    				<div class="item">
+    				    	<div class="mama sigma1"></div>&nbsp;&nbsp; &nbsp; <div>АГ "Сигма моторс" (Спб)</div>
+    			   	</div>
+			</div>
+			<div class="customers__items-row2">
+    				
+						 <div class="item">
+    				    	<div class="mama sib1"></div>&nbsp;&nbsp; &nbsp; <div>АГ "Сибмоторс" (Новокузнецк)</div>
+    			     	 </div>
+    			     	 <div class="item">
+    				    	<div class="mama avilon1"></div>&nbsp;&nbsp; &nbsp; <div>АГ "Авилон" (Москва)</div>
+    			     	 </div>
+
+
+            </div>
+
+    	</div>
+    </div>
+ </div>
+<div class="aboutus">
+ <h2>О нас</h2>
+   <div class="aboutus__promo">
+       <p align="right"><cite>"Для успеха не надо быть умнее других, надо просто быть на день быстрее большинства"</cite> <br>
+       Лео Сцилард</p>
+   </div>
+   <div class="aboutus__text"><p >Присутствие компании в социальных сетях - реальная необходимость для успешного развития любого бизнеса. Мы поможем вашей компании заявить о себе в любой из социальных сетей, обеспечим узнаваемость бренда, приведем новых клиентов и увеличим продажи.
+Digital-агентство «ЗаАвто» - команда профессионалов с самой мощной экспертизой рынка Авто. Мы специализируемся на авто-аудитории и авторынке: издаём уникальный контент,  настраиваем каналы продаж автомобилей и сервисных услуг, разрабатываем приложения и виджеты для социальных сетей, являемся оператором крупнейших медиапроектов с огромной аудиторией. Ежедневно мы взаимодействуем с сотнями тысяч автолюбителей на различных площадках и знаем что действительно интересно людям в современном цифровом мире. В нашем распоряжении эффективные рабочие инструменты, неиссякаемая энергия и невероятные идеи наших талантливых сотрудников. <br><br>
+
+Нашими услугами уже воспользовались:<br>
+АГ "Авилон" (Москва), "Автомама"  (Москва), "Фаворит  Моторс" (Москва)", Сигма Моторс" (СПб), "Сибмоторс" (Новокузнецк)<br><br>
+
+Наша специализация - автобизнес.<br>
+Мы изучаем специфику интернет-маркетинга компаний автобизнеса более 3 лет
+В нашей команде работают талантливые специалисты, пришедшие к нам из автобизнеса
+Мы разработали узкоспециализированные продукты для специалистов авторынка, повысив собственные компетенции и получив экспертизу в лидогенерации и управлении репутацией</p>
+ </div>
+
+</div>
+
+
+
+<div class="page-footer anchor">
+
+	<div class="page-footer__contacts">
+	<h4>Контакты</h4>
+	 
+	  <div class="contact2">
+	   <p>Михаил Александров<br>Руководитель отдела продаж</p>
+	   <p>Канал продаж в социальных сетях "ЗаАвто"<br>
+	  <a href="tel:+79110011157">GSM:+7(911)001 11 57</a><br>
+	  	Site: www.zaavto.ru<br>
+	  <a href="mailto:go@zaavto.ru">E-Mail:go@zaavto.ru</a></p>
+	  </div>
+	</div>
+
+	<div class="page-footer__links">
+		<!-- <a href="aboutus.html"><p align="center">О нас</p></a>  -->
+		<a href="license.html"><p align="center">Лицензионное соглашение</p></a>
+	</div>
+
+	<div class="page-footer__logo">
+		<img src="img/4Zll3Bq5Ups.png" width="250px" height="96px">
+	</div>
+
+</div>
+<div class="copyright"><p>ЗаАвто 2018</p></div>
+ 
+
+
+<div class="toTop" id="toTop"><img src="img/up3.png"></div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" >
+        <div class="modal-content" id="dialogForm">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Создать заявку</h4>
+            </div>
+            <form role="form" id="contactForm">
+            <div class="modal-body">
+                <label for="exampleInputName2">Ваше имя
+                <div class="input-group ">
+                    <span class="input-group-addon"><i class="fa fa-address-book" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" id="name" placeholder="Иван Иванов" required>
+                </div>
+                </label>
+                <label for="exampleInputName2">Телефон
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                    <input type="tel" class="form-control" id="phone" placeholder="+7 (123) 456-78-91" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18"required>
+                </div>
+                </label>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    <div class="msgSubmit hidden" id="msgSubmit">
+        <h2>Наши специалисты свяжутся с вами</h2>
+    </div>
+</div>
+<!-- Main library -->
+        <script src="js/three.min.js"></script>
+      
+        <!-- Helpers -->
+        <script src="js/projector.js"></script>
+        <script src="js/canvas-renderer.js"></script>
+
+        <!-- Visualitzation adjustments -->
+        <script src="js/3d-lines-animation.js"></script>
+
+        <!-- Animated background color -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="js/color.js"></script>
+
+ <script src="http://code.jquery.com/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+@import url(http://fonts.googleapis.com/css?family=Marck+Script);
+
+*{
+	margin:0;
+	padding:0;
+}
+
+html{
+	background-color: #f2f6fc;;
+}
+
+.container{
+	text-align: center;
+	font: bold 14px sans-serif;
+}
+
+.dropdown{
+	text-align: center;
+	width: 400px;
+	margin: 50px auto 160px;
+	position: relative;
+	color: gray;
+	text-align: center;
+}
+
+.dropdown a{
+	display: block;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #FFF;
+	text-align: center;
+	background-color: #6BB9E1;
+	font-size: 13px;
+	width: 120px;
+	padding: 9px 0;
+	border-radius: 2px;
+	margin: 4px auto 0;
+	opacity: 0.8;
+}
+
+.dropdown span {
+	background-color: #EC7164;
+	display: block;
+	box-sizing: border-box;
+	color: #FFF;
+	margin:0 auto;
+	font-size: 22px;
+	padding: 11px 15px;
+	line-height: 1;
+}
+
+.dropdown ul li a.active{
+	background-color: #687AD7;
+	opacity: 0.8 !important;
+}
+
+.dropdown ul li a:hover {
+	opacity: 1;
+}
+
+.dropdown ul{
+	position: absolute;
+	z-index: 200;
+	left: 50%;
+	margin: 10px 0 0 -250px;
+	list-style: none;
+	padding: 0;
+	width: 500px;
+}
+
+.dropdown ul li{
+	display: inline-block;
+}
+
+.dropdown:hover ul {
+	height: 180px;
+}
+
+footer {
+	font: normal 16px Arial, Helvetica, sans-serif;
+	padding: 25px 35px 15px 35px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #01BC78;
+	box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	color:#fff;
+}
+
+footer a.tz{
+	font-weight: normal;
+	font-size: 16px !important;
+	text-decoration: none !important;
+	display: block;
+	margin-right: 300px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #CCC !important;
+	position: relative;
+	padding-left: 140px;
+}
+
+footer a.tz:before{
+	font-weight: bold;
+	color: #FFF;
+	font-family: 'Marck Script', cursive;
+	content: 'www.sitehere.ru';
+	position: absolute;
+	text-align: right;
+	width: 260px;
+	left: 50%;
+	font-size: 40px;
+	top:-20px;
+}
