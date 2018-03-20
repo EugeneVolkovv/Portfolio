@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id='content'></div>
+
+    <script type="text/babel">
+
+        const Contacts = [
+            {
+                id: 1,
+                name: 'Robocop',
+                phone: '+1326809012',
+                image: 'https://media.giphy.com/media/mQozfAeylfOSc/giphy.gif'
+            },{
+                id: 2,
+                name: 'Darth Vader',
+                phone: '+1666666666',
+                image: 'https://media.giphy.com/media/8SxGru3XzElqg/giphy.gif'
+            },{
+                id: 3,
+                name: 'Shang Tsung',
+                phone: '+1326802312',
+                image: 'https://media.giphy.com/media/xqEx41Dnes0vu/giphy.gif'
+            },{
+                id: 4,
+                name: 'Sonya',
+                phone: '+1111809012',
+                image: 'https://media.giphy.com/media/ad3X9elxPBWc8/giphy.gif'
+            }
+
+        ]
+
+        var Contact = React.createClass({
+            render: function () {
+                return (
+                    <li className="contact">
+                        <img className="contact-image" src={this.props.image} width="60px" height="60px" />
+                        <div className="contact-info">
+                            <div className="contact-name">{this.props.name}</div>
+                            <div className="contact-phone">{this.props.phone}</div>
+                        </div>
+                    </li>
+
+                );
+            }
+        });
+
+        var ContactList = React.createClass({
+            getInitialState: function () {
+                return {
+                    displayedContacts: Contacts
+                }
+
+            },
+            handleSearch: function (event) {
+                //console.log(event.target.value);
+
+                var searchQuery = event.target.value.toLowerCase();
+
+                var onDisplayedContacts = Contacts.filter(function(el){
+                    var searchValue = el.name.toLowerCase();
+                    return searchValue.indexOf(searchQuery) !== -1;
+                });
+                this.setState({
+                    displayedContacts: onDisplayedContacts
+                })
+            },
+            render: function() {
+                return (
+                    <div className="contacts">
+                        <input type="text" className="search-field" onChange={this.handleSearch}/>
+                        <ul className="contact-list">
+                            {
+                                this.state.displayedContacts.map(function (el) {
+                                    return <Contact
+                                        key={el.id}
+                                        name={el.name}
+                                        phone={el.phone}
+                                        image={el.image}
+                                    />;
+                                }) 
+                            }
+                        </ul>
+                    </div>
+                );
+            }
+        });
+        ReactDOM.render(
+            <ContactList />,
+            document.getElementById('content')
+        );
+    </script>
+</body>
+</html>

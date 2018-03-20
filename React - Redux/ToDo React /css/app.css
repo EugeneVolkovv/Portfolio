@@ -1,0 +1,50 @@
+
+.field {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn {
+    width: 110px;
+    height: 30px;
+    border: 2px solid greenyellow;
+    color: white;
+    margin: 10px;
+}
+.blue {
+    background-color: blue;
+}
+.blue:hover {
+    background-color: deepskyblue;
+}
+.red {
+    background-color: red;
+}
+.red:hover {
+    background-color: brown;
+}
+.succes {
+    background-color: green;
+}
+.new {
+    background-color: pink;
+}

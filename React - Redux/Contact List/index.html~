@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+</head>
+<body>
+    <div id='content'></div>
+
+    <script type="text/babel">
+
+        const Contacts = [
+            {
+                id: 1,
+                name: 'Robocop',
+                phone: '+1326809012',
+                image: 'https://www.google.ru/imgres?imgurl=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FmQozfAeylfOSc%2Fgiphy.gif&imgrefurl=https%3A%2F%2Fgiphy.com%2Fgifs%2Frobocop-mQozfAeylfOSc&docid=hO-xvbQyFeCVgM&tbnid=nSFWYfKa2Szh9M%3A&vet=1&w=399&h=224&bih=575&biw=1187&ved=0ahUKEwiC8fHEw7HZAhWNGuwKHakAAW0QMwg5KAAwAA&iact=c&ictx=1'
+            },{
+                id: 2,
+                name: 'Darth Vader',
+                phone: '+1666666666',
+                image:
+            },{
+                id: 3,
+                name: 'Shang Tsung',
+                phone: '+1326802312',
+                image:
+            },{
+                id: 4,
+                name: 'Sonya',
+                phone: '+1111809012',
+                image:
+            }
+
+        ]
+
+
+        var HelloWorld = React.createClass({
+            render: function() {
+                return (
+                    <h1> Hello world! </h1>
+                );
+            }
+        });
+        ReactDOM.render(
+            <HelloWorld />,
+            document.getElementById('content')
+        );
+    </script>
+</body>
+</html>
