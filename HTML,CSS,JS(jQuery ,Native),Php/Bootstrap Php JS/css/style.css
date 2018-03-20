@@ -1,0 +1,169 @@
+body{ 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+header{
+	margin: 0px 0 0px;
+}
+
+.menu {
+	border:0px;  
+}
+
+.navbar {
+	margin:0;
+}
+
+.navbar .container {
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    height: 150px;
+    background: url("../img/2.png") 0 0 no-repeat ;
+}
+
+.content  .container   {
+    background: url("../img/2.png") 0 0 no-repeat,
+	url("../img/1.jpg") 0 0 no-repeat;            
+	text-align: center;
+	color: white;
+}
+
+.content h1 {
+    padding-bottom: 100px;
+}
+
+form {
+   	padding-bottom: 100px;
+}
+
+.navbar-brand img{
+	position: relative;
+	top: -8px;
+	right: -10px;
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: white;
+	padding-left: 30px;
+	padding-top: 30px;
+}
+
+.navbar-header .phone {
+	padding-top: 30px;
+	color:white;
+}
+
+ footer .container  {
+	height: 150px;
+	background: url("../img/2.png") 0 0 no-repeat ;
+	padding-left: 250px;
+}
+
+footer p {
+	color: white;
+	padding-top: 70px;
+}
+
+input:required:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+
+@media only screen and (max-width : 1366px) {
+  .navbar-brand img {
+	max-height: 120px;
+}
+}
+
+
+@media only screen and (max-width : 1200px) {
+  .navbar-brand img {
+		max-height: 120px;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .navbar-brand img {
+	max-height: 120px;
+}
+
+.form-group { 
+	padding-top: 20px;
+}
+
+.btn {
+	margin-top: 20px;
+	margin-left: 15px;
+}
+
+footer .container {
+	padding-left: 120px;
+}
+.content h1 {
+    padding-bottom: 90px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+.content h1 {
+    padding-bottom: 30px;
+}
+
+footer .container {
+	padding-left: 20px;}
+.navbar-default .navbar-nav > li > a {
+		padding:0;
+}
+
+.navbar-default .navbar-toggle{
+	top: 30px;
+	right: 30px;
+}
+
+.form-group{
+	padding-top: 0;
+}
+
+.navbar-brand img {
+	top:0;
+	right:30px;
+	max-height: 120px;
+}
+
+.navbar-header .phone {
+	position: relative;
+	right: 50px;
+	padding-top: 70px;
+}
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+.navbar-brand img {
+	top:40px;
+	right:30px;
+	max-height: 50px;
+}
+
+.slogan h1{
+		font-size: 25px;
+}
+}
+
