@@ -1,0 +1,176 @@
+
+
+.blocklist {
+	font-family: "Arial", sans-serif;
+	width: 1030px;
+	margin: 0  auto;
+	font-size: 0;
+	display:flex;	
+    align-items:flex-start;
+	
+}
+.blockitem {
+	margin-top: 0px;
+    padding: 0px;
+    display: inline-block;
+    width: 20%;
+    height: 520px;
+    vertical-align: top;
+
+}
+.blockitem__block__name {
+	margin: 25px 12px;
+	width:180px;
+	height: 70px;
+	font-size: 14px;
+	background-color: #024b9d ;
+	color: #ffffff;
+	text-transform:uppercase;
+	vertical-align: middle;
+	text-align: center;
+	
+}
+
+.color2 {
+    opacity: 0.9;
+}
+.color3 {
+    opacity: 0.8;
+}
+.color4 {
+    opacity: 0.7;
+}
+.color5 {
+    opacity: 0.6;
+}
+p{
+	padding-top: 20px;
+}
+a {
+	text-decoration: none;
+}
+
+
+ .block1{
+ 	background: url("../img/4.png") no-repeat;
+ 	background-position: -170px -80px;
+}
+ 
+
+.block2 {
+ 	background: url("../img/5.png") no-repeat;
+ 	background-position: -130px -100px;
+ 	
+ }
+ .block3 {
+ 	background: url("../img/2.png") no-repeat;
+ 	background-position: -130px -100px;
+ }
+ .block4 {
+ 	background: url("../img/3.png") no-repeat;
+ 	background-position: -140px -100px;
+ 	
+ }
+ .block5 {
+ 	background: url("../img/1.png") no-repeat;
+ 	background-position: -130px -100px; 
+ 	
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1030px;
+    margin: 0 auto;
+    height: 140px;
+    background-color: #024b9d;
+    opacity: 0.9;
+	 
+ }
+ .footer__phone  {
+ 	font-size: 20px;
+ 	color: #ffffff;
+	text-transform:uppercase;
+ }
+.footer__logo {
+
+	padding-top: 20px;
+	text-align: center;
+
+}
+ .footer__mail {
+ 	font-size: 20px;
+ 	font-size: 14px;
+ 	color: #ffffff;
+	text-transform:uppercase;
+ }
+ .footer__label {
+ 	padding-top: 20px;
+ 	font-size: 10px;
+ 	color: #ffffff;
+	text-transform:uppercase;
+	opacity: 0.2;
+ }
+.blocklist__text {
+	width: 804px;
+    height: 600px;
+}
+ 
+.details a{
+   color:white;
+   font-size: 12px;
+   padding-left: 15px;
+   padding-bottom: 10px;
+ }
+ .details a:hover {
+ 	color:#024b9d;
+ }
+.flip-container {
+	perspective: 1000px;
+}
+	
+.flip-container:hover .flipper, .flip-container.hover .flipper .block1{
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 206px;
+	height: 520px;
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	background: url("../img/4.png") no-repeat;
+ 	background-position: -170px -80px;
+	
+	transform: rotateY(0deg);
+}
+
+
+.back {
+	 transform: rotateY(180deg);
+	 background-color: rgba(75, 90, 120, 0.9);
+}
+.content {
+	font-size: 14px;
+	    width: 80%;
+    display: inline-block;
+    }

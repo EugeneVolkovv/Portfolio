@@ -1,0 +1,87 @@
+body{ 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+form {
+	padding-top: 30px;
+}
+input:valid {
+  border-color: green;
+}
+.place {
+	margin-bottom: 20px;
+}
+.fio {
+	margin-bottom: 20px;
+	width: 230px;
+}
+.login-pass {
+	width: 230px;
+	margin-top: 30px;
+}
+select {
+	width: 205px;
+}
+
+.move1 {
+	margin-top: 45px;
+	background-color: #2aabd2;
+	color:white;
+}
+
+.btn-default {
+	background-color: #2aabd2;
+	color:white;
+	margin-left: 195px;
+}
+.wrap-for-flex {
+	display: flex;
+	flex-direction:row;
+}
+.wrap-for-city {
+	display: flex;
+	flex-direction:row;
+}
+@media only screen and (max-width : 1366px) {
+
+}
+
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+	.wrap-for-city {
+		display: flex;
+		flex-direction:column;
+	}
+	.move1 {
+		margin-top: 0;
+	}
+	.btnTo {
+		margin-left: 60px;
+	}
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.wrap-for-flex {
+	flex-direction:column;
+}
+	button {
+		margin-left: 60px;
+		margin-top: 10px;
+	}
+}
+
