@@ -1,0 +1,270 @@
+
+
+$large-width: 1200px;
+$laptop-width: 980px;
+$handler-width: 768px;
+$smartphones-width: 480px;
+$mobile-width: 320px;
+
+@mixin large {
+  @media (max-width: #{$large-width}) {
+    @content;
+  }
+}
+
+@include large {
+  .page-header__menu a {
+    font-size: 16px ;
+  }
+  .info-block__text {
+    font-size: 40px;
+  }
+  .info-block__text {
+    top: 270px;
+  }
+  .info-block__buttons {
+    top:400px;
+  }
+  .info-block__text .slogan {
+    width: 850px;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: #{$laptop-width}) {
+    @content;
+  }
+}
+
+@include laptop {
+  .page-header__menu a {
+    font-size: 13px ;
+  }
+  .info-block__text {
+    font-size: 35px;
+  }
+  .info-block__text {
+    top: 230px;
+  }
+  .info-block__buttons {
+    top:500px;
+  }
+  .info-block__how-work {
+    flex-direction: column;
+    align-items:center;
+  }
+
+.image1, .image2 {
+  margin-right: 150px;
+  }
+  .work-community__wrapp-contetn {
+    flex-direction: column-reverse;
+    align-items:center;
+  }
+  .work-community h2 {
+    margin-bottom: 0;
+  }
+  .work-community__wrapp-contetn {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .work-community__wrapp-contetn ol {
+    margin-top: 100px;
+  }
+  .page-header__logo {
+    padding-left: 50px;
+  }
+  .info-block__text {
+    left: 50px;
+  }
+  .info-block__buttons {
+    left: -70px;
+  }
+  .page-header__menu li {
+    margin-right: 25px;
+  }
+  .images i {
+    font-size: 150px;
+
+  }
+  .info-block__text .slogan {
+    width: 700px;
+  }
+}
+
+
+  @mixin handler {
+    @media (max-width: #{$handler-width}) {
+      @content;
+    }
+  }
+
+  @include handler {
+    .page-header__menu ul {
+      width: 160px;
+  }
+    .info-block__text {
+      font-size: 22px;
+    }
+    .info-block__text {
+      top: 150px;
+    }
+    .info-block__buttons {
+      top:450px;
+    }
+    .info-block__buttons .btn {
+      height: 40px;
+      width: 200px;
+      font-size: 15px;
+      padding: 0px;
+      letter-spacing: 0;
+      margin-left: 20px;
+    }
+    .info-block__how-work li {
+      font-size: 14px;
+    }
+    .page-header__logo {
+      padding-left: 50px;
+    }
+    .info-block__text {
+      left: 30px;
+    }
+    .info-block__buttons {
+      left: 0px;
+      margin: 0;
+    }
+    .info-block__text img{
+      width: 400px;
+      height: 150px;
+    }
+    .info-block__text .slogan {
+      top:140px;
+    }
+    .info-block__how-work-image {
+      padding-left: 0;
+    }
+    .images i {
+      font-size: 100px;
+    }
+    .image1, .image2 {
+      margin-right: 100px;
+    }
+    .what-does-block__text li {
+      font-size: 15px;
+    }
+    .how-works__text {
+      font-size: 15px;
+    }
+    .how-works__img {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+
+    }
+    .how-works__img .how-works__img-1 .how-works__img-1-name, .how-works__img .how-works__img-2 .how-works__img-2-name {
+      font-size: 15px;
+      padding-bottom: 40px;
+    }
+    .work-community__text li {
+      font-size: 15px;
+    }
+    .work-community__img-name {
+      font-size: 15px;
+    }
+    .toTop {
+      bottom: 20px;
+      right: 10px;
+    }
+    .info-block__text .slogan {
+      width: 450px;
+    }
+}
+
+@mixin smartphones {
+  @media (max-width: #{$smartphones-width}) {
+    @content;
+  }
+}
+
+@include smartphones {
+  .info-block__text img{
+    width: 300px;
+    height: 100px;
+  }
+  .info-block__text {
+    font-size: 15px;
+  }
+  .info-block__text .slogan {
+    top:100px;
+  }
+  .info-block__buttons .btn {
+    height: 30px;
+    width: 170px;
+    font-size: 12px;
+    padding: 0px;
+    letter-spacing: 0;
+    margin-left: 10px;
+  }
+  .images i {
+    font-size: 70px;
+  }
+  .image1, .image2 {
+    margin-right: 50px;
+  }
+  .info-block__text .slogan {
+    width: 320px;
+  }
+  .info-block__buttons {
+    top: 350px;
+  }
+
+  .info-block__buttons .btn-Order {
+    top: 40px;
+    left: -180px;
+  }
+  .info-block__promo h2 {
+    font-size: 20px;
+  }
+  .info-block__promo h3 {
+    font-size:18px;
+  }
+  .info-block__how-work li {
+    font-size: 12px;
+  }
+  .what-does-block h2 {
+    font-size: 20px;
+  }
+  .what-does-block__text li {
+    font-size: 12px;
+  }
+  .how-works h2 {
+    font-size: 20px;
+  }
+  .how-works__text {
+    font-size: 12px;
+  }
+  .how-works__img .how-works__img-1 .how-works__img-1-name, .how-works__img .how-works__img-2 .how-works__img-2-name {
+    font-size: 10px;
+  }
+  .work-community h2 {
+    font-size: 20px;
+  }
+  .work-community__text li {
+    font-size: 12px;
+  }
+  .work-community__img-name {
+    font-size: 10px;
+  }
+  .how-works .btn {
+    font-size: 16px;
+  }
+    .work-community .btn {
+      font-size: 16px;
+      width: 212px;
+    }
+  .info-block__text {
+    left: 10px;
+  }
+}
+
+
